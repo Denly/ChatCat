@@ -1,0 +1,18 @@
+<template name="input">
+<div class="me">
+	<img class="headImg" src={{filepickerIdToImageUrl filepickerId h=50 w=50 align='faces' fit='crop' placehold_it='200x200'}}>
+	<div class="controls">
+					<textarea class="form-control name" rows="1" cols="10" placeholder="Name?"></textarea>	
+					
+				</div>
+
+</div>
+<div class="form-group">
+				<div class="controls">
+					<textarea class="form-control msgtext" rows="4" cols="50" placeholder="Someting want to say?"></textarea>	
+					
+				</div>
+			</div>
+			<input type="submit" value="Send" class="btn btn-primary submit"/>
+			<button class="uploadImg btn btn-default">Upload Head Image</button>
+</template>

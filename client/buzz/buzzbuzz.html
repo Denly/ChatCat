@@ -1,0 +1,28 @@
+<head>
+  <title>buzzbuzz</title>
+</head>
+
+<body>
+  <div class="container">
+  {{> head}}
+  {{> room}}
+  {{> input}}
+  </div>
+</body>
+
+<template name="room">
+  
+  <div class="post">
+  {{#each msg}}
+  {{> msgline}}
+  {{/each}}
+  </div>
+</template>
+
+<template name="head">
+  
+  <div class="post">
+  <h1>ChattingCat</h1>
+  <img class="LogoImg" src={{filepickerIdToImageUrl 'skywtYkRhuNbJLJe3cAz' h=80 w=80 align='faces' fit='crop' placehold_it='200x200'}}>
+  </div>
+</template>
